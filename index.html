@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <form onsubmit="signIn()">
+        <label for="username">Enter the user name here</label><br>
+        <input type="text" name="user" id="username" placeholder="Enter the user name here"><br>
+        <label for="password">Enter the password here </label><br>
+        <input type="password" name="passwordid" id="password" placeholder="Enter the password here"><br>
+        <button>Sign Up</button>
+
+    </form>
+    <script>
+       const storedusername="admin";
+       const storedpassword=1234;
+        function signIn(){
+        let user=document.getElementById("username").value.trim();
+        let password1=document.getElementById("password").value.trim();
+        if(user==storedusername && password1==storedpassword){
+            alert("you are sign in successfully");
+        }
+        else{
+            alert("Incorrect username or password");
+        }
+      
+        }
+    </script>
+</body>
+</html>
